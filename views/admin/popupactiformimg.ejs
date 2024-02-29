@@ -1,0 +1,52 @@
+<div class="topss">
+    <div>
+        <form action="/inputImage1" method="post" enctype="multipart/form-data">
+            <div class="tabs">
+                <div class="file-upload-containers">
+                    <span><h3>เพิ่มไฟล์</h3></span>
+                </div>
+                <div class="base">
+                    <div class="file-upload-container">
+                        <label for="file-upload1" class="custom-file-upload">เลือกไฟล์</label>
+                        <input type="file" name="imageput1" id="file-upload1">
+                        <span class="selected-file1">ไม่ได้เลือกไฟล์</span>
+                        <!-- <input type="text" class="custom-input" value=""> -->
+                    </div>
+                    <div class="ant">
+                        <div class="sbut">
+                            <button type="submit" class="suss submit">อัพโหลด</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>
+        <% Object.values(imgactivity).forEach(function(file, index) { %>
+        <div class="form-control">
+            <div class="asas">
+                <span>รูปที่ <%= index + 1 %></span>
+            </div>
+            <input type="text" class="custom-input" value="<%= file.imageput1 %>">
+            <!-- <div class="deletes">
+                <%= file._id %>
+            </div> -->
+            <div class="ant">
+                <div class="sbut">
+                    <button class="suss delete"><a href="/deleteimageadmins/<%= file._id %>" onclick="return confirm('คุณต้องการลบไฟล์รูปนี้หรือไม่')"><i class="bi bi-trash3-fill"></i></a></button>
+                </div>
+                
+            </div>
+        </div>
+        <% }) %>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+

@@ -1,0 +1,780 @@
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+/*from*/
+h5 {
+    padding-top: 25px;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+h6 {
+    padding-top: 15px;
+    /* padding-left: 5%; */
+}
+/*form one*/
+.ass  {
+    background: #C2DCF5;
+    border: 2px solid #445295;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+    width: 650px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.ass .form-controls {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    /* padding-bottom: 3%; */
+    padding-right: 20%;
+    margin-bottom: 5px;
+}
+.ass .form-controls label {
+    font-size: 20px;
+    display: block;
+    padding-bottom: 5px;
+}
+.ass .form-controls input {
+    padding: 10px;
+    border: 1px solid #5C65A9;
+    color: #5C65A9;
+    border-radius: 5px;
+    display: block;
+}
+.ass .form-controls input[type="tel"] {
+    width: 200px;
+    height: 45px;
+}
+.ass .form-controls input[type="text"] {
+    flex: 1;
+    width: 400px;
+    height: 45px;
+}
+/*form two*/
+.asb {
+    background: #C2DCF5;
+    border: 2px solid #445295;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+    width: 650px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.asb .form-controls label {
+    font-size: 20px;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.asb .form-controls select  {
+    /* margin-bottom: 10px; */
+    display: block;
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #5C65A9;
+    border: 1px solid #5C65A9;
+}
+.asb .form-controls input {
+    padding: 10px ;
+    width: 400px;
+    height: 45px;
+    border: 1px solid #5C65A9;
+    color: #5C65A9;
+    border-radius: 5px;
+}
+
+.form-controls textarea {
+    display: block;
+    border: 1px solid #5C65A9;
+    color: #5C65A9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.asb .form2 .form-controls {
+    display: flex;
+    flex-direction: column;
+}
+.asb .form2 .form-controls input {
+    padding: 10px ;
+    width: 100px;
+    height: 45px;
+    border: 1px solid #5C65A9;
+    color: #5C65A9;
+    border-radius: 5px;
+}
+/* .asb .form-controls {
+    display: block;
+    align-items: center;
+} */
+/* .asb .check {
+    display: block;
+} */
+
+
+
+
+.asb .check .form-controls input[type="checkbox"] {
+    /* display: flexbox; */
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+/* .asb .form-controls input[type="checkbox"] label {
+    font-size: 18px;
+} */
+/* .check {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10px;
+} */
+/* .form-controls .check label {
+    font-size: 18px;
+} */
+
+
+/*หมู่*/
+.sed input {
+    padding: 5px;
+    border: 1px solid #5C65A9;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 95px;
+    color: blue;
+    text-align: center;
+    margin-right: 10px;
+}
+.sed {
+    display: block;
+    /* padding-left: 12%; */
+    margin-bottom: 10px;
+}
+.sed td {
+    padding-left: 10px;
+
+}
+.sed tr {
+    font-size: 20px;
+}
+/*submit*/
+.subb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.submit-button {
+    background-color: #5C65A9;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin-left: 45%;
+    margin-top: 10px;
+    margin-bottom: 20px; */
+}
+.submit-button:hover {
+    background-color: #445295;
+}
+
+/* error */
+.form-controls.error input ,
+.form-controls.error select  ,
+.form2 .form-controls.error input {
+    border: 2px solid red;
+}
+.form-controls small ,
+.form1-controls small {
+    color: red;
+    visibility: hidden;
+}
+.form-controls.error small ,
+.form1-controls.error small {
+    visibility: visible;
+}
+.form-controls.success input ,
+.form-controls.success select {
+    border: 2px solid green;
+}
+
+
+
+
+/*=============== .controlss ===============*/
+.controlss {
+    display: none;
+}
+/*=============== range ===============*/
+input[type="range"] {
+    position: relative;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    display: block;
+    width: 60%;
+    height: 8px;
+    background: #d5d5d5;
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 8px;
+}
+
+input[type="range"]::-moz-track{
+    -moz-appearance: none;
+    height: 8px;
+}
+
+input[type="range"]::-ms-track {
+    appearance: none;
+    height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #3264fe;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+    /* -webkit-appearance: none; */
+    width: 20px;
+    height: 20px;
+    background: #3264fe;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    border: none;
+}
+input[type="range"]::-ms-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #3264fe;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    border: none;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+    background: #fff;
+    border: 3px solid #3264fe;
+}
+
+.disd {
+    width: 13%;
+    position: relative;
+    background: red;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+
+/*=============== CSS สำหรับ Popup ===============*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.popup-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-icon i {
+    font-size: 150px;
+    color: #0f0;
+}
+.popupmediate-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.list {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.popupmediate-icon p {
+    font-size: 20px;
+}
+
+.popup-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.close {
+    /* position: absolute; */
+    /* top: 5px;
+    right: 10px;
+    font-size: 20px; */
+    cursor: pointer;
+}
+
+.popup-sub .submit-button {
+    background-color: #0f0;
+    color: #fff;
+    padding: 10px 30px;
+    border: 2px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup-sub .submitclose-button {
+    background-color: #ff000f;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup-sub .submit-button:hover {
+    background-color: white;
+    border: #0f0 solid 2px;
+    color: #0f0;
+}
+
+.popup-sub .submitclose-button:hover {
+    background-color: white;
+    border: #ff000f solid 2px;
+    color: #ff000f;
+}
+
+
+@media (max-width: 600px) {
+    aside {
+        width: 100%;
+        display: block;
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin: 0;
+    }
+    /*from*/
+    h5 {
+        padding-top: 25px;
+        font-weight: bold;
+        /* padding-left: 10%; */
+        padding-bottom: 2%;
+    }
+    h6 {
+        padding-top: 15px;
+        /* padding-left: 5%; */
+    }
+    /*form one*/
+    .ass  {
+        background: #C2DCF5;
+        border: 2px solid #445295;
+        box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+    .ass .form-controls {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15%;
+        /* padding-bottom: 3%; */
+        padding-right: 20%;
+        margin-bottom: 5px;
+    }
+    .ass .form-controls label {
+        font-size: 20px;
+        display: block;
+        padding-bottom: 5px;
+    }
+    .ass .form-controls input {
+        padding: 10px;
+        border: 1px solid #5C65A9;
+        color: #5C65A9;
+        border-radius: 5px;
+        display: block;
+    }
+    .ass .form-controls input[type="tel"] {
+        width: 200px;
+        height: 45px;
+    }
+    .ass .form-controls input[type="text"] {
+        flex: 1;
+        width: 300px;
+        height: 45px;
+    }
+    /*form two*/
+    .asb {
+        background: #C2DCF5;
+        border: 2px solid #445295;
+        box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 20px;
+        /* padding-left: 15%; */
+        /* padding-right: 15%; */
+    }
+    .asb .form-controls label {
+        font-size: 20px;
+        display: block;
+        padding-bottom: 5px;
+    }
+    
+    .asb .form-controls select  {
+        /* margin-bottom: 10px; */
+        display: block;
+        width: 200px;
+        height: 45px;
+        border-radius: 5px;
+        padding: 10px;
+        color: #5C65A9;
+        border: 1px solid #5C65A9;
+    }
+    .asb .form-controls input {
+        padding: 10px ;
+        width: 300px;
+        height: 45px;
+        border: 1px solid #5C65A9;
+        color: #5C65A9;
+        border-radius: 5px;
+    }
+    
+    .form-controls textarea {
+        display: block;
+        border: 1px solid #5C65A9;
+        color: #5C65A9;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    
+    .form2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .asb .form2 .form-controls {
+        display: flex;
+        flex-direction: column;
+    }
+    .asb .form2 .form-controls input {
+        padding: 10px ;
+        width: 100px;
+        height: 45px;
+        border: 1px solid #5C65A9;
+        color: #5C65A9;
+        border-radius: 5px;
+    }
+    /* .asb .form-controls {
+        display: block;
+        align-items: center;
+    } */
+    /* .asb .check {
+        display: block;
+    } */
+    
+    
+    
+    
+    .asb .check .form-controls input[type="checkbox"] {
+        /* display: flexbox; */
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    /* .asb .form-controls input[type="checkbox"] label {
+        font-size: 18px;
+    } */
+    /* .check {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: 10px;
+    } */
+    /* .form-controls .check label {
+        font-size: 18px;
+    } */
+    
+    
+    /*หมู่*/
+    .sed input {
+        padding: 5px;
+        border: 1px solid #5C65A9;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 60px;
+        color: blue;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .sed {
+        display: block;
+        /* padding-left: 12%; */
+        margin-bottom: 10px;
+    }
+    .sed td {
+        padding-left: 5px;
+    
+    }
+    .sed tr {
+        font-size: 18px;
+    }
+    /*submit*/
+    .subb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .submit-button {
+        background-color: #5C65A9;
+        color: #fff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        /* margin-left: 45%;
+        margin-top: 10px;
+        margin-bottom: 20px; */
+    }
+    .submit-button:hover {
+        background-color: #445295;
+    }
+    
+    /* error */
+    .form-controls.error input ,
+    .form-controls.error select  ,
+    .form2 .form-controls.error input {
+        border: 2px solid red;
+    }
+    .form-controls small ,
+    .form1-controls small {
+        color: red;
+        visibility: hidden;
+    }
+    .form-controls.error small ,
+    .form1-controls.error small {
+        visibility: visible;
+    }
+    .form-controls.success input ,
+    .form-controls.success select {
+        border: 2px solid green;
+    }
+    
+    
+    
+    
+    /*=============== .controlss ===============*/
+    .controlss {
+        display: none;
+    }
+    /*=============== range ===============*/
+    input[type="range"] {
+        position: relative;
+        /* -webkit-appearance: none;
+        -moz-appearance: none; */
+        display: block;
+        width: 60%;
+        height: 8px;
+        background: #d5d5d5;
+        border-radius: 8px;
+        outline: none;
+    }
+    
+    input[type="range"]::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        height: 8px;
+    }
+    
+    input[type="range"]::-moz-track{
+        -moz-appearance: none;
+        height: 8px;
+    }
+    
+    input[type="range"]::-ms-track {
+        appearance: none;
+        height: 8px;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        background: #3264fe;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: -6px;
+        border: none;
+    }
+    
+    input[type="range"]::-moz-range-thumb {
+        /* -webkit-appearance: none; */
+        width: 20px;
+        height: 20px;
+        background: #3264fe;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: -6px;
+        border: none;
+    }
+    input[type="range"]::-ms-thumb {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background: #3264fe;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: -6px;
+        border: none;
+    }
+    input[type="range"]:active::-webkit-slider-thumb {
+        background: #fff;
+        border: 3px solid #3264fe;
+    }
+    
+    .disd {
+        width: 13%;
+        position: relative;
+        background: red;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    
+    
+    /*=============== CSS สำหรับ Popup ===============*/
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+    
+    .popup-content {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        width: 100%;
+        margin: 100px auto;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+    
+    .popup-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .popup-icon i {
+        font-size: 150px;
+        color: #0f0;
+    }
+    .popupmediate-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .list {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .popupmediate-icon p {
+        font-size: 20px;
+    }
+    
+    .popup-sub {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .close {
+        /* position: absolute; */
+        /* top: 5px;
+        right: 10px;
+        font-size: 20px; */
+        cursor: pointer;
+    }
+    
+    .popup-sub .submit-button {
+        background-color: #0f0;
+        color: #fff;
+        padding: 10px 30px;
+        border: 2px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .popup-sub .submitclose-button {
+        background-color: #ff000f;
+        color: #fff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .popup-sub .submit-button:hover {
+        background-color: white;
+        border: #0f0 solid 2px;
+        color: #0f0;
+    }
+    
+    .popup-sub .submitclose-button:hover {
+        background-color: white;
+        border: #ff000f solid 2px;
+        color: #ff000f;
+    }
+}

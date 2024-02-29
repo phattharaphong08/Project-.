@@ -1,0 +1,345 @@
+
+section {
+    /* background: teal; */
+    width: 100%;
+    /* height: 70%; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topss {
+    /* background: red; */
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    /* background: #FFF; */
+    float: left;
+    width: 50%;
+    /* height: 100%; */
+    padding: 0;
+    display: block;
+} 
+
+.images {
+    width: 100%;
+    height: 600px;
+    /* background: rebeccapurple; */
+    padding: 5px;
+}
+
+.boxs {
+    background: #FFF;
+    width: 100%;
+    /* height: 500px; */
+    /* overflow: auto; */
+}
+.box .wrappers {
+    margin-top: 10px;
+}
+.box .select-bth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #445295;
+    height: 60px;
+    color: #fff;
+}
+.box .select-bth span {
+    margin-left: 20px;
+    font-size: 24px;
+}
+.box .select-bth i {
+    margin-right: 20px;
+    font-size: 32px;
+    transition: transfrom 0.3s linear;
+}
+
+.contents {
+    display: none;
+}
+
+.wrappers.active .select-bth i {
+    transform: rotate(-180deg);
+}
+
+.wrappers.active .contents {
+    display: block;
+}
+
+.box .options {
+    max-height: 250px;
+    overflow: auto;
+}
+.options::-webkit-scrollbar {
+    width: 7px;
+}
+.options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+.box .options li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+.box .options li i {
+    margin-right: 20px;
+}
+.add {
+    width: 30%;
+}
+.adds {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ========== street ========== */
+.street {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* ========== slider ========== */
+.slider {
+    /* background: yellow; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    /* position: relative; */
+}
+.images {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+.images img {
+    background: #5C65A9;
+    height: 100%;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    /* margin: 5px; */
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 3px #445295;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {
+    background: #445295;
+}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+
+
+
+@media (max-width: 600px) {
+    
+section {
+    /* background: teal; */
+    width: 100%;
+    /* height: 70%; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topss {
+    /* background: red; */
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    /* background: #FFF; */
+    float: left;
+    width: 100%;
+    /* height: 100%; */
+    padding: 0;
+    display: block;
+} 
+
+.images {
+    width: 100%;
+    height: 600px;
+    /* background: rebeccapurple; */
+    padding: 5px;
+}
+
+.boxs {
+    background: #FFF;
+    width: 100%;
+    /* height: 500px; */
+    /* overflow: auto; */
+}
+.box .wrappers {
+    margin-top: 10px;
+}
+.box .select-bth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #445295;
+    height: 60px;
+    color: #fff;
+}
+.box .select-bth span {
+    margin-left: 20px;
+    font-size: 24px;
+}
+.box .select-bth i {
+    margin-right: 20px;
+    font-size: 32px;
+    transition: transfrom 0.3s linear;
+}
+
+.contents {
+    display: none;
+}
+
+.wrappers.active .select-bth i {
+    transform: rotate(-180deg);
+}
+
+.wrappers.active .contents {
+    display: block;
+}
+
+.box .options {
+    max-height: 250px;
+    overflow: auto;
+}
+.options::-webkit-scrollbar {
+    width: 7px;
+}
+.options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+.box .options li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+.box .options li i {
+    margin-right: 20px;
+}
+.add {
+    width: 30%;
+}
+.adds {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ========== street ========== */
+.street {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* ========== slider ========== */
+.slider {
+    /* background: yellow; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    /* position: relative; */
+}
+.images {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+.images img {
+    background: #5C65A9;
+    height: 100%;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    /* margin: 5px; */
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 3px #445295;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {
+    background: #445295;
+}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+}

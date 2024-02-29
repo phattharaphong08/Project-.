@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin อาสาสมัครสาธารณสุข หมู่ 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/public/CSS/admin/headAdmin.css">
+    <link rel="stylesheet" href="/public/CSS/admin/editAdmin.css">
+
+</head>
+<body>
+    <%- include('navbar') %>
+
+    <section class="home">
+        <div class="problem">
+            <div>
+                <a href="/followAdmin"><i class="bi bi-arrow-left"></i></a>
+            </div>
+            <div class = "imgs">
+                <img src="/image/userImage/<%= problemData.image %>" >
+            </div>
+            <form id="myForm" method="POST" action="/update">
+                <input type="hidden" value="<%=  problemData._id %>" name="update_id">
+                <div class = "">
+                    
+                    
+                    <h5>เเจ้งปัญหา</h5>
+                    <div class = "form">
+                        <label for="problem">ชื่อปัญหา</label>
+                        <input type="text" id="problem" name="problem" readonly value="<%=  problemData.problem %>" >
+                    </div>
+                    
+                    <div class = "form">
+                        <label for="address">หมู่บ้าน</label>
+                        <input type="text" id="address" name="address" readonly value="<%=  problemData.address %>" >
+                    </div>
+                    <div class = "form">
+                        <label for="description">รายละเอียดสถานที่เพิ่มเติม</label>
+                        <textarea name="description" id="description" cols="50" rows="3"><%=  problemData.description %></textarea>
+                    </div>
+
+                    <div class = "form">
+                        <div>
+                            <label for="statuss">สถานะ</label>
+                        </div>
+                        <div class="container">
+                            <!-- <input type="text" id="statuss" name="statuss" value="<%=  problemData.statuss %>" ></i> -->
+                            <input type="range" name="statuss" class="slidd" min="0" max="100" value="<%=  problemData.statuss %>" step="10" oninput="updateSlider()">
+                            <div class="disd" ><span id="statussPercentage"><%= problemData.statuss %>%</span></div>
+                        </div>
+                    </div>
+
+                    <div class = "form">
+                        <label for="cause">สาเหตุความล่าช้า</label>
+                        <textarea name="descriptionstatuss" id="descriptionstatuss" cols="50" rows="3" ></textarea>
+                        
+                    </div>
+                    <div class = "sed controlss">
+                        <table>
+                            <tr>
+                                <td>หมู่</td><td>อำเภอ</td><td>ตำบล</td><td>จังหวัด</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name = "moo" readonly value="8"></td><td><input type="text" name = "subdistrict" readonly value="มาบโป่ง"></td>
+                                <td><input type="text" name = "district" readonly value="พานทอง"></td><td><input type="text"  name = "province" readonly value="ชลบุรี"></td>
+                            </tr>
+                        </table> 
+                    </div>
+
+                    <h5>ข้อมูลผู้เเจ้งเหตุ</h5>
+                    <div class = "form">
+                        <label for="name">ชื่อ-นามสกุล</label>
+                        <input type="text" id="name" name="name" readonly value="<%=  problemData.name %>" >
+                        
+                    </div>
+                    <div class = "form">
+                        <label for="phone number">เบอร์โทรศัพท์</label>
+                        <input type="tel" id="phoneNumber" name = "phoneNumber" inputmode="numeric" tabindex="10" maxlength="10" pattern="0[0-9]{9}" readonly value="0<%=  problemData.phoneNumber %>">
+                        
+                    </div>
+                    <div class="forms">
+                        <button type="submit" class="submit-button" >อัพเดต</button>
+                    </div>
+                    
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- <script src="/public/js/adminJs/index.js"></script> -->
+    <script src="/public/js/adminJs/range.js"></script>
+    
+
+</body>
+</html>

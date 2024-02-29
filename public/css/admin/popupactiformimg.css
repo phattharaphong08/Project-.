@@ -1,0 +1,134 @@
+.modalss {
+    position: absolute;
+    background: white;
+    left: 20%;
+    top: 10%;
+    width: 800px;
+    height: 600px;
+    border-radius: 24px;
+    display: none;
+}
+.deletes {
+    display: none;
+}
+.topss {
+    /* background: yellow; */
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    border-radius: 10px;
+}
+
+.file-upload-container {
+    margin-right: 10%;
+    display: block;
+    /* background: #007BFF; */
+    width: 900px;
+}
+
+/* CSS เพื่อสไตล์ input ของไฟล์ */
+input[type="file"] {
+    display: none; 
+}
+
+.tabs {
+    margin-bottom: 20px;
+}
+
+/* สไตล์ปุ่มที่ใช้ในการเลือกไฟล์ */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #445295;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-file-upload:hover {
+    background-color: #344185; 
+} 
+
+/* สไตล์กรอกข้อความที่แสดงเมื่อเลือกไฟล์ */
+.selected-file1 {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #445295;
+    width: auto;
+    /* border: 2px solid red; */
+}
+
+.base {
+    display: flex;
+}
+.ant {
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* margin-left: 20px; */
+}
+.asas {
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+/* สไตล์ปุ่มลบ */
+.suss.delete {
+    background-color: #ff5722; /* เปลี่ยนสีพื้นหลังปุ่มลบ */
+    color: #fff; /* เปลี่ยนสีข้อความในปุ่มลบเป็นสีขาว */
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* ขอบเขตโค้ง */
+    padding: 10px 20px; /* ขนาดขอบปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือ */
+    transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนแปลงสีพื้นหลังอย่างนุ่มๆ เมื่อชี้ไปที่ปุ่ม */
+}
+.suss.delete a {
+    color: white;
+}
+
+.suss.delete:hover {
+    background-color: #f44336; /* สีพื้นหลังเมื่อชี้ไปที่ปุ่ม */
+}
+
+/* สไตล์ปุ่ม Submit */
+.suss.submit {
+    background-color: #445295; /* เปลี่ยนสีพื้นหลังปุ่ม Submit */
+    color: #fff; /* เปลี่ยนสีข้อความในปุ่ม Submit เป็นสีขาว */
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* ขอบเขตโค้ง */
+    padding: 10px 20px; /* ขนาดขอบปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือ */
+    transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนแปลงสีพื้นหลังอย่างนุ่มๆ เมื่อชี้ไปที่ปุ่ม */
+}
+
+.suss.submit:hover {
+    background-color: #45a049; /* สีพื้นหลังเมื่อชี้ไปที่ปุ่ม */
+}
+
+input[type="text"] {
+    padding: 10px; /* ขอบเขต padding ของ input */
+    border: 1px solid #ccc; /* เส้นขอบ input */
+    border-radius: 5px; /* ขอบเขตโค้ง */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    width: 60%; /* ขนาดความกว้างของ input ให้เต็มแถว */
+    margin-right: 20px;
+}
+
+/* สไตล์ Input Text เมื่อมีการโฟกัส */
+input[type="text"]:focus {
+    border-color: #007BFF; /* เปลี่ยนสีขอบ input เมื่อมีการโฟกัส */
+    outline: none; /* ลบเส้นโค้งสีน้ำเงินเมื่อมีการโฟกัส */
+    box-shadow: 0 0 5px #007BFF; /* เพิ่มเงาเมื่อมีการโฟกัส */
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+}
+.form-control .asas span {
+    font-size: 30px;
+}

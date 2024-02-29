@@ -1,0 +1,174 @@
+*{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    left: 100px;
+    height: 100%;
+    width: calc(99% - 88px);
+    /* background: red; */
+}
+
+
+/* ========== box1-1 ========== */
+.box1-1 {
+    background: #FFF;
+    float: left;
+    width: 60%;
+    height: 99%;
+
+} 
+.box1-1 .story {
+    width: 100%;
+    height: 95%;
+    overflow: auto;
+}
+.story::-webkit-scrollbar {
+    width: 7px;
+}
+.story::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+.story::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+
+.tables {
+    width: 100%;
+}
+
+.tables thead {
+    background: #445295;
+    height: 60px;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+}
+
+.tables tbody tr {
+    height: 52px;
+    text-align: center;
+}
+
+.tables tbody tr th {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    height: 52px;
+}
+
+.tables tbody tr th:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tables tbody tr th:nth-child(5) a i {
+    color: black;
+}
+.tables tbody tr:hover th  ,
+.tables tbody tr:hover th button ,
+.tables tbody tr:hover th button .icons {
+    background: #5C65A9;
+    color: #FFF;
+}
+
+/*submit*/
+.submit-buttonss {
+    background-color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit-buttons {
+    background-color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+button.icons {
+    color: black;
+}
+/* .submit-buttons:hover {
+    background-color: #445295;
+} */
+
+
+
+/* ========== box1-2 ========== */
+.box1-2 {
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* ========== box2-1 ========== */
+.box2-1 {
+    width: 100%;
+    height: 25%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1-2 .box2-1 .box3-1 {
+    background: #FFF;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+}
+.box1-2 .box2-1 table {
+    width: 100%;
+}
+.box1-2 .box2-1 table thead {
+    width: 100%;
+    height: 40px;
+    background: #445295;
+    color: #FFF;
+    text-align: center;
+    align-items: center;
+}
+.box1-2 .box2-1 table tbody {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.box1-2 .box2-1 table tbody tr {
+    height: 45px;
+}
+
+.box1-2 .box2-1 table tbody tr th{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* ========== box2-2 ========== */
+.box2-2 {
+    width: 100%;
+    height: 75%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box4-1 {
+    background: #fff;
+    width: 95%;
+    height: 98%;
+    border-radius: 5px;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อาสาสมัครสาธารณสุข หมู่ 8 หนองนกฮูก</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/user/headUser.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/user/followUser.css"  crossorigin="anonymous">
+</head>
+<body>
+    <%- include('head') %>
+
+    <aside>
+        <div class = "aa">
+            
+                <% Object.values(products).forEach(function(item) { %>
+                
+                    <div class = "liss">
+                        <div class="choice">
+                            <table>
+                                <tr>
+                                    <td><a href="/<%= item.IDscript %>"> <img src = "/image/userImage/<%= item.image %>" alt = ""></td></a> 
+                                    <td>
+                                        <div class = "choiceA">
+                                            <p>รายการปัญหา</p> 
+                                            <p>สถานที่เกิดเหตุ</p>
+                                            <p>สถานะ</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class = "choiceA">
+                                            <p><%= item.problem %></p> 
+                                            <p><%= item.address %></p>
+                                            <p><%= item.statuss %>%</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>  
+                <% })%>
+                <!-- <% Object.values(assist).forEach(function(itemassist) { %>
+                
+                    <div class = "liss">
+                        <div class="choice">
+                            <table>
+                                <tr>
+                                    <td><a href="/<%= itemassist.IDscript %>"> 
+                                        <button>
+                                            <p>ดูรายละเดียดเพิ่มเติม</p>
+                                        </button>
+                                    </td></a> 
+                                    <td>
+                                        <div class = "choiceA">
+                                            <p>รายการของความช่วยเหลือ</p> 
+                                            <p>สถานที่เกิดเหตุ</p>
+                                            <p>สถานะ</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class = "choiceA">
+                                            <p><%= itemassist.problem %></p> 
+                                            <p><%= itemassist.address %></p>
+                                            <p><%= itemassist.statuss %>%</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>  
+                <% })%>                      -->
+            
+        </div>
+
+
+        <!-- <div class="follow">
+            <div class="report">
+                <div class="matter">
+                    <h3>รายการปัญหา</h3>
+                </div>
+                <div class="end">
+                    <div class="">
+                        <div class = "liss">
+                            <div class="choice">
+                                <table>
+                                    <tr>
+                                        <td><a href=""> <img src = "" alt = ""></td></a> 
+                                        <td>
+                                            <div class = "choiceA">
+                                                <p>รายการปัญหา</p> 
+                                                <p>สถานที่เกิดเหตุ</p>
+                                                <p>สถานะ</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class = "choiceA">
+                                                <p></p> 
+                                                <p></p>
+                                                <p></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class = "liss">
+                            <div class="choice">
+                                <table>
+                                    <tr>
+                                        <td><a href=""> <img src = "" alt = ""></td></a> 
+                                        <td>
+                                            <div class = "choiceA">
+                                                <p>รายการปัญหา</p> 
+                                                <p>สถานที่เกิดเหตุ</p>
+                                                <p>สถานะ</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class = "choiceA">
+                                                <p></p> 
+                                                <p></p>
+                                                <p></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class = "liss">
+                            <div class="choice">
+                                <table>
+                                    <tr>
+                                        <td><a href=""> <img src = "" alt = ""></td></a> 
+                                        <td>
+                                            <div class = "choiceA">
+                                                <p>รายการปัญหา</p> 
+                                                <p>สถานที่เกิดเหตุ</p>
+                                                <p>สถานะ</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class = "choiceA">
+                                                <p></p> 
+                                                <p></p>
+                                                <p></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="assist">
+                <div class="matter">
+                    <h3>รายการของความช่วยเหลือ</h3>
+                </div>
+                <div class="end">
+                    <div>
+                        <div class = "liss">
+                            <div class="choice">
+                                <table>
+                                    <tr>
+                                        <td><a href=""> <img src = "" alt = ""></td></a> 
+                                        <td>
+                                            <div class = "choiceA">
+                                                <p>รายการปัญหา</p> 
+                                                <p>สถานที่เกิดเหตุ</p>
+                                                <p>สถานะ</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class = "choiceA">
+                                                <p></p> 
+                                                <p></p>
+                                                <p></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="help">
+                <div class="matter">
+                    <h3>รายการของความช่วยเหลือผู้ป่วย</h3>
+                </div>
+                <div class="end">
+                    
+                </div>
+            </div>
+        </div> -->
+
+
+    </aside>
+
+
+
+
+
+    <!-- <footer>
+        <p>อาสาสมัครสาธารณสุขหมู่ที่ 8 หนองนกฮูก</p>
+        <p>หมู่ที่ 8 ตำบลมาบโป่ง อำเภอพานทอง จังหวัดชลบุรี รหัสไปรษณี 20160</p>
+    </footer> -->
+
+    <!-- <script src="/public/js/userJs/index1.js"></script> -->
+</body>
+</html>

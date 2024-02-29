@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+/*  ==================== home ==================== */ 
+
+.home {
+    display: block;
+    position: relative;
+    left: 100px;
+    height: 100%;
+    width: calc(99% - 88px);
+}
+
+.lists {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  ==================== paper ==================== */ 
+
+.paper {
+    background: #fff;
+    width: 90%;
+    height: 70%;
+}
+
+.bag {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    border-bottom: 4px solid grey;
+}
+
+.bag a {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*  ==================== cost ==================== */ 
+
+.costs {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  ==================== sheet ==================== */ 
+.sheet {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*  ==================== first ==================== */ 
+
+.first {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sss {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*  ==================== mediate ==================== */ 
+
+.mediate {
+    width: 40%;
+    height: 100%;
+}
+
+.practice {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* เพิ่มความกว้างสำหรับ label */
+label {
+    width: 120px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* สไตล์ของแต่ละ input */
+.practice .form-controls input[type="text"] {
+    width: 80%;
+    padding: 4px;
+    border: 1px solid #5C65A9;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-size: 16px;
+    color: #445295;
+}
+
+/* สไตล์ของตารางและแถว */
+.practice table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 4px;
+    text-align: left;
+}
+
+
+/*  ==================== lower ==================== */ 
+
+.lower {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .rapp table tr {
+    height: 40px;
+}
+
+.rapp table tr td:first-child {
+    width: 150px;
+} */
+
+/* สไตล์ของ label */
+.rapp label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* สไตล์ของ input */
+.rapp .form-controls input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #5C65A9;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+
+/*  ==================== sub ==================== */ 
+
+.lower .sub {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.submit-button {
+    background-color: #0E0F61;
+    border: 2px solid #0E0F61;
+    width: 150px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #fff;
+    color: #0E0F61;
+    border: 2px solid #0E0F61;
+}
+
+
+/*  ==================== img ==================== */ 
+.form31 input[type="file"] {
+    display: none;
+}
+
+.form31 label.custom-file-upload {
+    width: 150px;
+    border: 2px solid #445295;
+    background-color: #445295;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.form31 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form31 .imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.form31 img {
+    max-width: 200px;
+    display: none;
+}
+
+/*  ==================== form-controls ==================== */ 
+.form-controls {
+    /* padding: 10px ; */
+    /* border: 1px solid #5C65A9; */
+    /* color: #5C65A9; */
+    border-radius: 5px;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+}
+/* .form-controls input {
+    border: #445295 2px solid;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+} */
+
+/*  ==================== error ==================== */ 
+
+.form-controls.error input ,
+.form-controls.error select {
+    border: 2px solid red;
+}
+.form-controls small {
+    color: red;
+    visibility: hidden;
+}
+.form-controls.error small {
+    visibility: visible;
+}
+.form-controls.success input ,
+.form-controls.success select {
+    border: 2px solid green;
+}

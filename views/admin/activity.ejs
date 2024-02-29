@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin อาสาสมัครสาธารณสุข หมู่ 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="/public/CSS/admin/headAdmin.css">
+    <link rel="stylesheet" href="/public/CSS/admin/activityAdmin.css">
+    <link rel="stylesheet" href="/public/CSS/admin/popupactiformimg.css">
+</head>
+<body>
+    <%- include('navbar') %>
+
+    <section class="home">
+        <div class="overlay"></div>
+        <div class="overlass"></div>
+        <!-- /* ==================== important ==================== */ -->
+        <div class="important">
+            <!-- /* ==================== roof ==================== */ -->
+            <div class="roof">
+                <div class="seads">
+                    <button class="show-modal ">
+                        <i class="bi bi-plus"></i>
+                    </button>
+                    <!-- /* ==================== modals ==================== */ -->
+                    <div class="modals">
+                        <%- include('popupactivityform')  %>
+                    </div>
+                </div>
+            </div>
+            <!-- /* ==================== boxs ==================== */ -->
+            <div class="boxs">
+                
+                <%- include('activimonth', {monthData:januaryData, februaryData, marchData, 
+                    aprilData, mayData, juneData, julyData, augustData, septemberData, octoberData,
+                    novemberData, decemberData }) %>
+                
+            </div>  
+        </div>
+        <!-- /* ==================== box1-2 ==================== */ -->
+        <div class="box1-2">
+             <!-- /* ==================== image ==================== */ -->
+            <div class="coc">
+                <div class="box2-1">
+                    <div class="ship">
+                        <div class="cards">
+                            <div class="road">
+                                <button class="show-modals">
+                                    เพิ่มรูป
+                                </button>
+                            </div>
+                            
+                            <div class="modalss">
+                                <%- include('popupactiformimg')  %>
+                            </div>
+                        </div>
+                        <div class="street">
+                            <div class="slider">
+                                <div class="images">
+                                    <input type="radio" name="slide" id="img1">
+                                    <input type="radio" name="slide" id="img2">
+                                    <input type="radio" name="slide" id="img3">
+                                    <input type="radio" name="slide" id="img4">
+
+                                    <% Object.values(imgactivity).slice(0, 4).forEach(function(item, index) { %>
+                                        <img src="/image/imageAdmin/activityimg/<%= item.imageput1 %>" alt="img<%= index + 1 %>" class="m<%= index + 1 %>">
+                                    <% }) %>
+                                
+                                    
+                                </div>
+
+                                <div class="dots">
+                                    <% Object.values(imgactivity).slice(0, 4).forEach(function(item, index) { %>
+                                        <label for="img<%= index + 1 %>"></label>
+                                    <% }) %>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- /* ==================== month ==================== */ -->
+            <div class="coc">
+                <div class="box2-2">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button id="prev-month">&#8249;</button>
+                            <h1 id="current-month">September 2023</h1>
+                            <button id="next-month">&#8250;</button>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="calendar-body">
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    
+    <script src="/public/js/adminJs/day.js" ></script>
+    <script src="/public/js/adminJs/navbar.js"></script>
+    <script src="/public/js/adminJs/activity.js"></script>
+    <script src="/public/js/adminJs/popup.js"></script>
+    <script src="/public/js/adminJs/calendar.js"></script>
+    <script src="/public/js/adminJs/formimg.js"></script>
+    <script src="/public/js/adminJs/formimg3.js"></script>
+</body>
+</html>

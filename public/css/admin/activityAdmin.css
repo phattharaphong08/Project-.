@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+.home {
+    display: flex;
+    position: relative;
+    left: 100px;
+    height: 100%;
+    width: calc(99% - 88px);
+    /* background: red; */
+}
+/* ==================== important ==================== */
+.important {
+    background: #FFF;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    display: block;
+} 
+
+/* ==================== roof ==================== */
+
+.roof {
+    width: 100%;
+    height: 10%;
+    background: #5C65A9;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.roof .seads button  {
+    color: #FFF;
+    padding: 6px 6px;
+    border: none;
+    background: #5C65A9;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.roof .seads button i {
+    font-size: 34px;
+} 
+
+/* ==================== madals ==================== */
+
+.modals {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    width: 600px;
+    height: 600px;
+    border-radius: 24px;
+    display: none;
+}
+
+
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+}
+.overlass {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ==================== forms ==================== */
+.forms {
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 40px 50px;
+    /* overflow: auto; */
+}
+/* ==================== boxs ==================== */
+.boxs {
+    width: 100%;
+    height: 89%;
+    overflow: auto;
+}
+
+.add {
+    width: 30%;
+}
+.adds i {
+    color: black;
+}
+
+.boxs::-webkit-scrollbar {
+    width: 7px;
+}
+.boxs::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+.boxs::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+.important .wrappers {
+    margin-top: 10px;
+}
+.important .select-bth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #445295;
+    height: 60px;
+    color: #fff;
+    font-size: 28px;
+}
+.important .select-bth span {
+    margin-left: 20px;
+}
+.important .select-bth i {
+    margin-right: 20px;
+    font-size: 32px;
+    transition: transfrom 0.3s linear;
+}
+
+.contents {
+    display: none;
+}
+
+.wrappers.active .select-bth i {
+    transform: rotate(-180deg);
+}
+
+.wrappers.active .contents {
+    display: block;
+}
+
+.important .options {
+    max-height: 250px;
+    overflow: auto;
+}
+.options::-webkit-scrollbar {
+    width: 7px;
+}
+.options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+.important .options li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+.important .options li i {
+    margin-right: 20px;
+}
+
+
+/* ========== box1-2 ========== */
+
+.box1-2 {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+}
+.coc {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coc .box2-1 {
+    background: #FFF;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+}
+
+/* ========== ship ========== */
+
+
+.box2-1 .ship {
+    /* background: red; */
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    /* overflow-y: hidden; */
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* display: none; */
+}
+
+/* .box2-1 .ship::-webkit-scrollbar {
+    width: 2px;
+    display: none;
+}
+.box2-1 .ship::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+.box2-1 .ship::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 20px;
+} */
+
+/* ========== cards ========== */
+
+.cards {
+    width: 100%;
+    height: 15%;
+    /* background: rebeccapurple; */
+}
+
+/* ========== road ========== */
+
+.road {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/*submit*/
+.road .show-modal {
+    background-color: #5C65A9;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.road.show-modal:hover {
+    background-color: #445295;
+}
+
+.road .show-modals {
+    background-color: #5C65A9;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.road.show-modals:hover {
+    background-color: #445295;
+}
+/* ========== street ========== */
+.street {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* ========== slider ========== */
+.slider {
+    /* background: yellow; */
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    /* position: relative; */
+}
+.images {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+.images img {
+    background: #5C65A9;
+    height: 100%;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    /* margin: 5px; */
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 3px #445295;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {
+    background: #445295;
+}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+
+
+
+/* ========== container ========== */
+.container {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+/* Style the calendar container */
+.calendar {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the calendar header */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#prev-month,
+#next-month {
+    background-color: #5C65A9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#current-month {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style the calendar table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 14.28%; /* 100% / 7 days */
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #5C65A9;
+    color: white;
+}
+
+/* Highlight the current day */
+td.today {
+    background-color: #5C65A9;
+    color: white;
+}
+
+/* Style the calendar events */
+.events {
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+/* Add more styles as needed */
+
+
+
+
+/* ========== form ========== */
+
+
+/* สไตล์สำหรับ dropdown list */
+.dropdown {
+    display: inline-block;
+    width: 100px; /* กำหนดความกว้างของ dropdown */
+    padding: 8px;
+    border: 2px solid #445295;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* สไตล์เมื่อเม้าส์ hover บนตัวเลือก */
+.dropdown:hover {
+    background-color: #f0f0f0;
+}
+
+/* สไตล์สำหรับตัวเลือกวันที่และเดือน */
+select {
+    width: 150px;
+    padding: 8px;
+    border: 2px solid #445295;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.box2-1 .form {
+    display: block;
+    justify-content: center;
+}
+.form .day {
+    
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.form .day label {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    left: 0;
+    font-size: 20px;
+}
+
+.days {
+    border: 2px solid #445295;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.day input {
+    border: 2px solid #445295;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.day textarea {
+    border: 2px solid #445295;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.date-input {
+    /* เพิ่มขอบแบบขีดเส้นใต้เมื่อเลื่อนเ mouserover */
+    text-decoration: underline;
+}
+
+/* ========== sub ========== */
+.form .sub {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* ========== box2-1 ========== */
+
+
+
+/* ========== box2 ========== */
+.box2-2 {
+    background: #FFF;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+}
+
+
+/* ========== submit ========== */
+
+/*submit*/
+.submit-button {
+    background-color: #5C65A9;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #445295;
+}
+
+/* error */
+.form-controls.error input {
+    border: 2px solid red;
+}
+.form-controls small {
+    color: red;
+    visibility: hidden;
+}
+.form-controls.error small {
+    visibility: visible;
+}
+.form-controls.success input {
+    border: 2px solid green;
+}

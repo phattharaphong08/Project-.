@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin อาสาสมัครสาธารณสุข หมู่ 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="/public/CSS/admin/headAdmin.css">
+    <link rel="stylesheet" href="/public/css/admin/addmemberAdmin.css">
+</head>
+<body>
+    <%- include('navbar') %>
+
+    <section class="home">
+        <!-- /* ==================== lists ==================== */ -->
+        <div class="lists">
+            <div class="paper">
+                <!-- /* ==================== bag ==================== */ -->
+                <div class="bag">
+                    <div>
+                        <a>เพิ่มบัญชีสมาชิก Admin</a>
+                    </div>
+                </div>
+                <!-- /* ==================== cost ==================== */ -->
+                <form id="myForm" action="/register" method="POST" class="costs" enctype="multipart/form-data">
+                    <div class="sheet">
+                        <!-- /* ==================== first ==================== */ -->
+                        <!-- <% if(errors != null && errors.length > 0) { %>
+                            <% for(let i = 0; i < errors.length; i++ ) { %>
+                                <p class="alert alert-danger"></p>
+                            <% } %>
+                        <% } %>     -->
+                        <div class="first">
+                            <div class="sss">
+                                <div class="ons">
+                                    <!-- <img id="previewImage" src="#" alt="" class="preview-image">
+                                    <input type="file" id="fileInput" name="fileAdmin" class="file-input">
+                                    <label for="fileInput" class="file-label">Upload File</label> -->
+
+                                    <div class="form31">
+                                        <div class="imgs">
+                                            <img id="preview-images" src="" alt="ตัวอย่างรูปภาพ" >
+                                        </div>
+                                        <div class="form-controls">
+                                            <input type="file" id="file-uploads" name="fileAdmin" />
+                                            <label for="file-uploads" class="custom-file-upload">
+                                                เลือกไฟล์รูป
+                                            </label><br>
+                                            <small>error message</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="oss">
+                                    <input type="file" id="fileInput" name="fileAdmin" class="file-input">
+                                    <label for="fileInput" class="file-label">Upload File</label>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- /* ==================== mediate ==================== */ -->
+                        <div class="mediate">
+                            <div class="practice">
+                                <table>
+                                    <tr>
+                                        <td><label for="nameAdmin">ชื่อ-นามสกุล</label></td>
+                                        <td>
+                                            <div class="form-controls">
+                                                <input type="text" id="nameAdmin" name="nameAdmin" >
+                                                <small>error message</small>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="rankAdmin">ตำเเหน่ง</label></td>
+                                        <td>
+                                            <div class="form-controls">
+                                                <input type="text" id="rankAdmin" name="rankAdmin" >
+                                                <small>error message</small>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="emailAdmin">อีเมล</label></td>
+                                        <td>
+                                            <div class="form-controls">
+                                                <input type="text" id="emailAdmin" name="emailAdmin">
+                                                <small>error message</small>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="facebookAdmin">Facebook</label></td>
+                                        <td>
+                                            <div class="form-controls">
+                                                <input type="text" id="facebookAdmin" name="facebookAdmin">
+                                                <small>error message</small>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="lineAdmin">line</label></td>
+                                        <td>
+                                            <div class="form-controls">
+                                                <input type="text" id="lineAdmin" name="lineAdmin" >
+                                                <small>error message</small>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="telAdmin">เบอร์โทรศัพท์</label></td>
+                                        <td>
+                                            <div class="form-controls">
+                                                <input type="text" id="telAdmin" name="telAdmin" >
+                                                <small>error message</small>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    <!-- /* ==================== lower ==================== */ -->
+                    <div class="lower">
+                        <div class="rapp">
+                            <div class="edn">
+                                <div class="form-controls">
+                                    <label for="usernameAdmin">Username</label>
+                                    <input type="text" id="usernameAdmin" name="usernameAdmin">
+                                    <small>error message</small>
+                                </div>
+                                <div class="form-controls">
+                                    
+                                    <label for="passwordAdmin">Password</label>
+                                    <input type="text" id="passwordAdmin" name="passwordAdmin" >
+                                    <small>error message</small>
+                                </div>
+                                <div class="sub">
+                                    <button type="submit" class="submit-button" >Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="/public/js/adminJs/index1.js"></script> -->
+    <script src="/public/js/adminJs/formregister.js"></script>
+    <script src="/public/js/adminJs/addnew.js"></script>
+</body>
+</html>

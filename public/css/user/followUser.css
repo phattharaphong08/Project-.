@@ -1,0 +1,156 @@
+aside {
+    width: 100%;
+    /* height: 1500px; */
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.aa  {
+    width: 100%;
+    /* margin-top: 20px; */
+}
+
+.liss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choice {
+    width: 70%;
+    /* height: 200px; */
+    background: #75869F;
+    border: 3px solid #0E0F61;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    margin-top: 10px;
+}
+.choice img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.choice  table tr td:first-child{
+    width: 350px;
+}
+.aa table tr td:nth-child(2) {
+    padding-right: 80px;
+}
+.aa table tr td:nth-child(3) {
+    padding-left: 30px;
+}
+.choiceA p {
+    font-size: 20px;
+}
+
+/* ==================== follow ==================== */
+/* .follow {
+    width: 60%;
+    height: 1300px;
+    background: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+} */
+
+/* .report, .assist, .help {
+    width: 100%;
+    height: 760px;
+    background: red;
+    overflow: hidden;
+} */
+
+/* .matter {
+    width: 100%;
+    height: 80px;
+    background: #5C65A9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.matter h3 {
+    margin-left: 20px;
+} */
+
+/* ==================== end ==================== */
+/* .end {
+    width: 100%;
+    height: 620px;
+    background: #96A9DB;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.end::-webkit-scrollbar {
+    width: 7px;
+}
+
+.end::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+.end::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+} */
+
+
+/* ==================== end ==================== */
+
+@media  (max-width: 800px) {
+    aside {
+        width: 100%;
+        /* height: 1500px; */
+        /* background: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .aa  {
+        width: 100%;
+        /* margin-top: 20px; */
+    }
+    
+    .liss {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .choice {
+        width: 100%;
+        height: 200px;
+        background: #75869F;
+        border: 3px solid #0E0F61;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        margin-top: 10px;
+    }
+    .choice img {
+        max-width: 150px;
+        border-radius: 10px;
+    }
+    
+    .choice  table tr td:first-child{
+        width: 200px;
+        /* text-align: center; */
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+    .aa table tr td:nth-child(2) {
+        padding-right: 20px;
+    }
+    .aa table tr td:nth-child(3) {
+        padding-left: 5px;
+    }
+    .choiceA p {
+        font-size: 14px;
+    }
+    
+}
