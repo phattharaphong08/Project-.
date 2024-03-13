@@ -1,21 +1,8 @@
 //จัดการ Routing
 const express = require ('express')
 const router = express.Router()
-const passport = require('passport');
-// const LocalStrategy = require('passport-local').Strategy;
-// const session = require('express-session');
 
-//เรียกข้อมูลจาก models
-// const formDatas = require('../models/modeluser/modeluser')
-// const addHomedata = require('../models/modeladmin/modeladmin')
-// const eventsadmin = require('../models/modeladmin/modelevent')
-// const imageadmins = require('../models/modeladmin/modelimage')
-// const loginAdmin = require('../models/modeladmin/modelregister')
-//อัพโหลดไฟล์
-// const multer = require('multer') //ลบ
 const path = require ('path')
-// const fs = require('fs');
-
 
 // Controllers
 /*  ==================== HomeAdmin ==================== */ 
@@ -60,7 +47,6 @@ const logoutController = require('../controller/adminController/logout/logoutCon
 const redirectifAuth = require('../middleware/redirectifAuth')
 const authMiddleware = require('../middleware/authMiddleware')
 const middlewareUser = require('../middleware/middlewareUser')
-
 
 /*  ==================== HomeAdmin ==================== */ 
 router.get('/homeAdmin', authMiddleware, homeAdminController) // มี Middleware "authMiddleware"
@@ -111,13 +97,6 @@ router.post('/register', registerController)
 router.get('/logout', logoutController)
 
 
-
-
-
-
-
-
-
 // ระบุตัวเก็บ file รูป
 router.get('/public/image/อสม.1.png', (req, res) => {
     res.setHeader('Content-Type', 'image/jpeg'); // ระบุ Content-Type ที่ถูกต้องสำหรับไฟล์ภาพ JPEG
@@ -128,14 +107,9 @@ router.get('/public/image/kaopansa65.png', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'image', 'image.jpg'));
 });
 
-
-
 router.get('/public/image/imageAdmin', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'image', 'imageAdmin'));
 });
-
-
-
 
 
 module.exports = router

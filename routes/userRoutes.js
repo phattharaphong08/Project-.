@@ -1,10 +1,7 @@
 //จัดการ Routing
 const express = require('express');
-// const bodyParser = require('body-parser');
 const router = express.Router()
 const path = require('path');
-
-
 
 
 // Controllers
@@ -26,10 +23,6 @@ const conyact = require('../controller/userController/conyactuser/conyact');
 const assistController = require('../controller/userController/formuser/assistController');
 const helpformdata = require('../controller/userController/formuser/formhelp')
 
-// router.get('/activity',(req,res) => {
-//     res.render('activity')
-// })
-
 
 router.get('/activity', activity)
 router.get('/conyact', conyact)
@@ -47,38 +40,15 @@ router.get('/follow', follow)
 router.get('/:IDscript', problem)
 
 
-
-
-// /*  ==================== activity ==================== */
-// router.get('/user', acc);
-// /*  ==================== conyact ==================== */
-// router.get('/conyact', conyact)
-
-
-// // สร้างเส้นทางสำหรับ "/activity"
-// router.get('/user', (req,res) => {
-//     res.render('add');
-// });
-
-
-
 router.get('/public/image/imageAdmin', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'image', 'imageAdmin'));
 });
-
-
-
 
 // ระบุตัวเก็บ file รูป
 router.get('/public/image/userImage', (req, res) => {
     res.setHeader('Content-Type', 'image/jpeg'); // ระบุ Content-Type ที่ถูกต้องสำหรับไฟล์ภาพ JPEG
     res.sendFile(path.join(__dirname, '..', 'public', 'image', 'userImage' , 'image.jpg'));
 });
-
-
-
-
-
 
 
 module.exports = router

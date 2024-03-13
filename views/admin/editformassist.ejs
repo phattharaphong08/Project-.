@@ -20,9 +20,6 @@
             <div>
                 <a href="/followAdmin"><i class="bi bi-arrow-left"></i></a>
             </div>
-            <!-- <div class = "imgs">
-                <img src="/image/userImage/<%= problemData.image %>" >
-            </div> -->
             <form id="myForm" method="POST" action="/updateformassist">
                 <input type="hidden" value="<%=  problemData._id %>" name="update_id">
                 <div class = "">
@@ -46,7 +43,6 @@
                             <label for="statuss">สถานะ</label>
                         </div>
                         <div class="container">
-                            <!-- <input type="text" id="statuss" name="statuss" value="<%=  problemData.statuss %>" ></i> -->
                             <input type="range" name="statuss" class="slidd" min="0" max="100" value="<%=  problemData.statuss %>" step="10" oninput="updateSlider()">
                             <div class="disd" ><span id="statussPercentage"><%= problemData.statuss %>%</span></div>
                         </div>
